@@ -1,5 +1,6 @@
 const { AppDataSource } = require('../../data-source');
 const UserRepository = require("../../user/user.repository");
+const StockMeRepository = require("../stock.repository")
 
 const stockMeRepository = new StockMeRepository(AppDataSource);
 const userRepository = new UserRepository(AppDataSource);
