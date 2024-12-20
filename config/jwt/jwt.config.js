@@ -1,7 +1,9 @@
 const jwt = require('jsonwebtoken');
 const JwtExpiryError = require("./JwtExpiryError");
-const {json} = require("express");
-const key = "ehdgoanfrhkqorentksdlakfmrhekfgehfhrgksmsladlqhdngktkdnflsfkkakstp";
+const { json } = require("express");
+const process = require('process')
+
+const key = process.env.JWT_KEY;
 
 getEmail = (str) => {
     return new Promise((resolve, reject) => {

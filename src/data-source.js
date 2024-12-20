@@ -2,11 +2,11 @@ const { DataSource } = require('typeorm');
 const {join} = require("node:path");
 
 const AppDataSource = new DataSource({
-    type: 'mysql',
+    type: 'mariadb',
     host: 'localhost',
-    port: 3305,
+    port: 3306,
     username: 'root',
-    password: 'mingyu08',
+    password: 'op1928!!',
     database: 'mosimgi',
     synchronize: true,
     logging: false,
